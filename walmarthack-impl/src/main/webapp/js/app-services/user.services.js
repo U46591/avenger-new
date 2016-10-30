@@ -13,7 +13,7 @@
     	//alert('USER SERVICE *************');
         var services = {};
         var ym=this;
-        ym.url="https://wal-mart-hack.herokuapp.com/rest/user/"
+        ym.url="http://walmarthack-palakkal.rhcloud.com/rest/"
         services.GET=GET;
         services.POST=POST;
         return services;
