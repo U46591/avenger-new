@@ -1,22 +1,17 @@
 <form name="myRegForm" novalidate>
 	<div class="list has-header">
-		<label class="item item-input"> 
-			<input type="text"
+		<label class="item item-input"> <input type="text"
 			placeholder="Name" name="user" data-ng-model="ym.user.name" required />
-		</label> 
-		<label class="item item-input"> <input type="number"
-			placeholder="Phone Number" placeholder="+91-636-78658" name="phone"
-			data-ng-pattern="ym.user.mobileNo" data-ng-model="ym.user.mobileNo"/>
-		</label> 
-		<label class="item item-input" for="password"> 
-		<input
-			type="password" placeholder="Password" id="password" name="password"
-			data-ng-model="ym.user.password" data-ng-minlength="8"
-			data-ng-maxlength="20"
-			required />
-		</label> 
-		<button class="button button-block button-positive" data-ng-click="ym.register();"
-			style="margin-bottom: 3%;">SignUp</button>
+		</label> <label class="item item-input"> <input type="number"
+			placeholder="Phone Number" data-ng-model="ym.user.mobileNo" />
+
+		</label> <label class="item item-input" for="password"> <input
+			type="password" placeholder="Password"
+			data-ng-model="ym.user.password" required />
+		</label>
+
+		<button class="button button-block button-positive"
+			data-ng-click="ym.register();" style="margin-bottom: 3%;">SignUp</button>
 
 	</div>
 	<div class="bar bar-footer bar-positive">

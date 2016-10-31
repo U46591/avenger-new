@@ -16,6 +16,11 @@
 		var ym = this;
 		ym.user={};
 		ym.register = Register;
+		(function(){
+			alert('clear register pages');
+			ym.user.name="";
+			ym.user.mobileNo="";
+		})();
 		
 		function Register(){
 			//alert('register ------');

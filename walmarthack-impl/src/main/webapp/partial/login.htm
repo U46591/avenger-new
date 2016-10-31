@@ -1,0 +1,19 @@
+<form name="myForm" novalidate>
+	<div class="list has-header">
+
+		<label class="item item-input">
+			<input type="text"
+			placeholder="Phone Number" data-ng-model="ym.user.mobileNo" />
+		</label> 
+		<label class="item item-input" for="password"> 
+			<input type="password" placeholder="Password" id="password" name="password"
+			data-ng-model="ym.user.password" required />
+		</label>
+
+	</div>
+	<button class="button button-block button-positive" data-ng-click="login();"
+		style="margin-top: 44px">Login</button>
+
+	<a href="#/register">Not a registered User??? </a>
+</form>
+

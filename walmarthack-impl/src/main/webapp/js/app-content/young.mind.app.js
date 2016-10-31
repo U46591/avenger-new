@@ -14,7 +14,7 @@
         $routeProvider
         .when('/', {
         	controller : 'LoginController',
-    		templateUrl : 'homePage.html',
+    		templateUrl : 'partial/login.htm',
     		controllerAs : 'ym'
     	})
 

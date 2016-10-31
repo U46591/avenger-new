@@ -5,7 +5,6 @@
 		<groupId>com.walmarthack.services</groupId>
 		<artifactId>walmarthack</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-
 	</parent>
 	<artifactId>walmarthack-impl</artifactId>
 	<packaging>war</packaging>
@@ -75,17 +74,17 @@
 
 
 	<repositories>
-	<repository>
-		<id>eap</id>
-		<url>http://maven.repository.redhat.com/techpreview/all</url>
-		<releases>
-			<enabled>true</enabled>
-		</releases>
-		<snapshots>
-			<enabled>true</enabled>
-		</snapshots>
-	</repository>
-</repositories>
+		<repository>
+			<id>eap</id>
+			<url>http://maven.repository.redhat.com/techpreview/all</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
 			<id>eap</id>
@@ -124,5 +123,19 @@
 			</build>
 		</profile>
 	</profiles>
-
+	<build>
+		<finalName>walmarthack</finalName>
+		<plugins>
+			<!-- To deploy on Tomcat -->
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<path>/${project.build.finalName}</path>
+					<port>9090</port>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>

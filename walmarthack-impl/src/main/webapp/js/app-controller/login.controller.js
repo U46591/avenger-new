@@ -12,6 +12,7 @@
     LoginController.$inject = ['$location'];
     function LoginController($location) {
        var ym=this;
+       ym.user={};
        ym.login=Login;
         (function initController() {
           
