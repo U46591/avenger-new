@@ -17,6 +17,11 @@ public interface LoginResource {
 	@Path("/test/{tester}")
 	@Produces("application/json")
 	Response testJersey(@PathParam("tester")String tester);
+	
+	@GET
+	@Path("/show/all-users")
+	@Produces("application/json")
+	Response showAllUsers();
 
 	@POST
 	@Path("/login")

@@ -2,15 +2,30 @@ package com.youngminds.services.modal;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="USER_INFO")
 public class User implements Serializable {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@Column(name="MOBILE_NO",unique=true)
 	private Long mobileNo;
+	@Column(name="NAME")
 	private String name;
+	@Column(name="PASSWORD")
 	private String password;
+	@Column(name="EMAIL", unique=true)
 	private String email;
 
 	public Long getMobileNo() {
@@ -43,6 +58,22 @@ public class User implements Serializable {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	@Override
+	public boolean equals(Object obj){
+		if (this == obj){
+			return true;
+		}
+		User person = (User) obj;
+		if (this.mobileNo != null ?
+				!this.mobileNo.equals(person.mobileNo)
+				:person.mobileNo != null){
+			return false;
+		}
+		else {
+			return true;
+		}	
 	}
 
 	@Override

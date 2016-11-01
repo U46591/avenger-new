@@ -14,14 +14,22 @@
        var ym=this;
        ym.user={};
        ym.login=Login;
+       
+       var staticMethods={};
+       staticMethods.logout=Logout;
+       
+       return staticMethods;
+       
         (function initController() {
-          
+          alert('login controller ----');
         })();
-        
-        ym.clear=function(){
-        
+            
+        function Logout(){
+        	alert('logout ------');
         };
+        
         function Login() {
+        	alert('login ------');
         };
     
     }

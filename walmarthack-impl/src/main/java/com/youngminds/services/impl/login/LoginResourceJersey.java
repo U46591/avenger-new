@@ -1,5 +1,7 @@
 package com.youngminds.services.impl.login;
 
+import java.util.List;
+
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
@@ -54,6 +56,16 @@ public class LoginResourceJersey implements LoginResource{
 	@Override
 	public Response testJersey(String tester) {
 		return Response.ok("WELCOME -- "+tester+" !!").build();
+	}
+	@Override
+	public Response showAllUsers() {
+		try{
+			List<?> data=template.requestBody(LoginRoutes.SHOW_ALL_USERS,"id", List.class);
+			return Response.ok(data).build();
+		}catch(CamelExecutionException cee){
+			LOGGER.error("*******  list all users ::Exception::"+cee);
+			return Response.status(404).entity(cee).build();
+		}
 	}
 
 }

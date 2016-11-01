@@ -13,7 +13,19 @@
 
 
 	<dependencies>
+		
 
+		<!-- Dependencies for SQLite -->
+		<dependency>
+			<groupId>org.xerial</groupId>
+			<artifactId>sqlite-jdbc</artifactId>
+			<version>3.8.11.2</version>
+		</dependency>
+		<dependency>
+			<groupId>net.kemitix</groupId>
+			<artifactId>sqlite-dialect</artifactId>
+			<version>0.1.0</version>
+		</dependency>
 		<dependency>
 			<groupId>com.walmarthack.services</groupId>
 			<artifactId>walmarthack-api</artifactId>

@@ -9,8 +9,9 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<jdbc:embedded-database id="dataSource" type="HSQL">
-		<jdbc:script location="classpath:db/sql/create-db.sql" />
-		<jdbc:script location="classpath:db/sql/insert-data.sql" />
-	</jdbc:embedded-database>
+	<jdbc:initialize-database>
+		<jdbc:script location="classpath:META-INF/db/sql/create-db.sql"/>
+		<jdbc:script location="classpath:META-INF/db/sql/insert-data.sql"/>
+	</jdbc:initialize-database>
+
 </beans>

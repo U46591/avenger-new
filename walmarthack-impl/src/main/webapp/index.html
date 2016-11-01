@@ -8,16 +8,17 @@
 <title>Personalized Wal-Mart Offers</title>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="icon" href="data:;base64,iVBORw0KGgo=">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-
 </head>
-<div class="bar bar-header bar-positive">
-	<button class="button icon ion-navicon"></button>
-	<h1 class="title">Wal-mart</h1>
-	<button class="button icon ion-home" data-ng-click="redirectToHome();"></button>
-</div>
+
+
 <body data-ng-app="youngMindApp">
+	<div class="bar bar-header bar-positive">
+		<button class="button icon ion-navicon"
+			data-ng-click="LoginController.logout();"></button>
+		<h1 class="title">Wal-mart</h1>
+		<button class="button icon ion-home" data-ng-click="redirectToHome();"></button>
+	</div>
 	<div data-ng-view></div>
 
 	<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>

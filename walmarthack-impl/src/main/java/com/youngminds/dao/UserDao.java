@@ -1,5 +1,7 @@
 package com.youngminds.dao;
 
+import java.util.List;
+
 import com.youngminds.services.modal.User;
 
 public interface UserDao {
@@ -8,6 +10,6 @@ public interface UserDao {
 
 	User validateUser(User user);
 
-	
+	List<User> showAllUsers();
 
 }
