@@ -17,9 +17,6 @@ import com.youngminds.services.modal.User;
 @Repository
 public class UserDaoImpl implements UserDao {
 
-	// @Autowired
-	// JdbcTemplate jdbcTemplate;
-
 	@Autowired
 	SessionFactory sessionFactory;
 	
@@ -28,15 +25,9 @@ public class UserDaoImpl implements UserDao {
 	}
 	@Override
 	public void inserUser(final User user) {
-
-		String sql = "INSERT INTO users VALUES (?,?,?,?)";
-		try {
-			// jdbcTemplate.update(sql, new
-			// Object[]{user.getMobileNo(),user.getName(),user.getPassword(),user.getEmail()});
-		} catch (Exception exp) {
-			System.out.println(exp);
-		}
-
+		
+		Session session=sessionFactory.openSession();
+		session.save(user);
 	}
 
 	@Override
