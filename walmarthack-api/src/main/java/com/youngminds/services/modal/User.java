@@ -10,23 +10,38 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="USER_INFO")
+@Table(name = "USER_INFO")
 public class User implements Serializable {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
-	@Column(name="MOBILE_NO",unique=true)
+	@Column(name = "ID")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+
+	@Column(name = "MOBILE_NO")
 	private Long mobileNo;
-	@Column(name="NAME")
+
+	@Column(name = "NAME")
 	private String name;
-	@Column(name="PASSWORD")
+
+	@Column(name = "PASSWORD")
 	private String password;
-	@Column(name="EMAIL", unique=true)
+
+	@Column(name = "EMAIL", unique = true)
 	private String email;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
 	public Long getMobileNo() {
 		return mobileNo;
@@ -61,24 +76,20 @@ public class User implements Serializable {
 	}
 
 	@Override
-	public boolean equals(Object obj){
-		if (this == obj){
+	public boolean equals(Object obj) {
+		if (this == obj) {
 			return true;
 		}
 		User person = (User) obj;
-		if (this.mobileNo != null ?
-				!this.mobileNo.equals(person.mobileNo)
-				:person.mobileNo != null){
+		if (this.mobileNo != null ? !this.mobileNo.equals(person.mobileNo) : person.mobileNo != null) {
 			return false;
-		}
-		else {
+		} else {
 			return true;
-		}	
+		}
 	}
 
 	@Override
 	public String toString() {
-		return "User [mobileNo=" + mobileNo + ", name=" + name + ", password="
-				+ password + ", email=" + email + "]";
+		return "User [mobileNo=" + mobileNo + ", name=" + name + ", password=" + password + ", email=" + email + "]";
 	}
 }

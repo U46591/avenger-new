@@ -10,11 +10,14 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.youngminds.dao.UserDao;
+import com.youngminds.services.modal.Person;
 import com.youngminds.services.modal.User;
 
 @Repository
+@Transactional(readOnly=true)
 public class UserDaoImpl implements UserDao {
 
 	@Autowired
@@ -23,7 +26,9 @@ public class UserDaoImpl implements UserDao {
 	public UserDaoImpl() {
 		System.out.println("UserDAO Impl Constructor ************** ");
 	}
+	
 	@Override
+	@Transactional(readOnly=false)
 	public void inserUser(final User user) {
 		
 		Session session=sessionFactory.openSession();
