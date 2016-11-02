@@ -13,7 +13,6 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.youngminds.dao.UserDao;
-import com.youngminds.services.modal.Person;
 import com.youngminds.services.modal.User;
 
 @Repository
