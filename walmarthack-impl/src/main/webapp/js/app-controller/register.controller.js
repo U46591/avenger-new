@@ -17,7 +17,7 @@
 		ym.user={};
 		ym.register = Register;
 		(function(){
-			alert('clear register pages');
+			//alert('clear register pages');
 			ym.user.name="";
 			ym.user.mobileNo="";
 		})();
@@ -38,11 +38,11 @@
 	}
 	
 	function PasswordValidation(){
-		alert('password validation -------');
+		//alert('password validation -------');
 	}
 	
 	function ValidatePasswordC(){
-		alert('password validation C-------');
+		//alert('password validation C-------');
 	}
 	
 })();

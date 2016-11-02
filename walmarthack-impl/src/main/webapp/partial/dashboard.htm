@@ -1,7 +1,7 @@
  <div
 	class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
 	<div class="tabs">
-		<a class="tab-item" href="#/viewProducts"> <i class="icon ion-bag"></i>
+		<a class="tab-item" href="#/successPage"> <i class="icon ion-bag"></i>
 			Products
 		</a> <a class="tab-item" href="#/viewCart"> <i
 			class="icon ion-ios-cart"></i> Cart
@@ -23,8 +23,10 @@
     <div class="gallery-image-div">
       <img ng-src='{{product.image}}' class='gallery-product-image' style="width:20%" >
       <h3 class='gallery-product-title'></h3>
-      <h3 class='gallery-product-price'>{{product.price}}</h3>
-      <button ng-click="addToCart(product);">Add to cart</button>
+         <h3 class='gallery-product-price'> {{product.title}} </h3>
+      <h3 class='gallery-product-price'> {{product.price}} $</h3>
+      <div    class="flag flag-rollback" ><label>{{product.offer}}%<br>Off</label></div>
+      <button class="btn btn-primary" style="margin-top: 4%;" ng-click="ym.addToCart(product);">Shop Now</button>
     </div>
   </div>
   </div>
@@ -36,7 +38,29 @@
 
 
 
+<style>
 
+
+
+.flag-rollback {
+    background: #db1313;
+}
+.flag {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    float: left;
+    clear: both;
+    height: 16px;
+    padding: 0 10px;
+    margin-bottom: 4px;
+    border-radius: 0 50px 50px 0;
+    background: #db1313;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+}
+</style>
 
 
 

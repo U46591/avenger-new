@@ -18,7 +18,7 @@
  			
             if (response.success) {
             	ym.products = response.data.products;
-            	console.log("hello.."+ym.products)
+            	console.log("hello..",ym.products)
                 //FlashService.Success('Registration successful', true);
               //  $location.path('/successPage');
             } else {
@@ -33,6 +33,12 @@
  		{
  			
  			$location.path("/successPage");
+ 		}
+ 		ym.addToCart=function(e)
+ 		{
+ 			UserService.ADDTOCART(e);
+ 			
+ 			
  		}
 
  		

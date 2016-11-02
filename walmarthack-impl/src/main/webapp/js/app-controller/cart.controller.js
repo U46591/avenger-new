@@ -9,9 +9,12 @@
         .controller('CartController', CartController)
         .directive('passwordValidate',PasswordValidate);
 
-    CartController.$inject = ['$location'];
-    function CartController($location) {
+    CartController.$inject = ['$location','UserService'];
+    function CartController($location,UserService) {
        var ym=this;
+      
+		ym.items=UserService.GETCART();
+		console.log("Succesfuly added to cart",ym.items);
        ym.login=Login;
         (function initController() {
           

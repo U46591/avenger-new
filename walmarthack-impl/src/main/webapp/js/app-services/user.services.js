@@ -11,6 +11,7 @@
 		// alert('USER SERVICE *************');
 		var services = {};
 		var ym = this;
+		var itemList=[];
 		/**
 		 * url to connect with openshift server
 		 * ym.url="http://walmarthack-palakkal.rhcloud.com/rest/user/"
@@ -23,7 +24,19 @@
 
 		services.GET = GET;
 		services.POST = POST;
+		services.ADDTOCART=ADDTOCART;
+		services.GETCART=GETCART;
 		return services;
+		
+		function ADDTOCART(item) {
+			if(item){
+			itemList.push(item)}
+			console.log("Carts :"+itemList);
+			return itemList;
+		}
+		function GETCART() {
+            return itemList;
+        };
 
 		function GET(url) {
 			return $http.get(url).then(handleSuccess, handleError);
@@ -49,7 +62,7 @@
 		}
 
 		function handleError(error) {
-			res.success = false;
+			error.success = false;
 			return error;
 			/*
 			 * return function () { return { success: false, message: error }; };
