@@ -1,10 +1,4 @@
- 
-<div class="bar bar-header bar-positive">
-   <button class="button icon ion-navicon"></button>
-      <h1 class="title">My Cart View</h1>
-   <button class="button icon ion-home" ng-click="ym.redirectToHome();"></button>
-</div>
-             
+     
     <ion-content>
       
 <div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
@@ -21,14 +15,39 @@
         <i class="icon ion-cash"></i>
         Wallet
       </a>
-     
+  
       </div>
+     Items {{ym.items}}
     </div>
   
   
       
     </ion-content>
-    <div class="bar bar-footer bar-positive">
-<button class="button icon ion-navicon pull-right"></button>
+    
+   <ion-pane class="pane">
+<ion-nav-view >
+<ion-content class="scroll-content ionic-scroll  has-header">
 
+
+<ion-gallery products="ym.items">
+<div class='ion-gallery-content'>
+  <div class='card gallery-card' ng-repeat='product in ym.items'>
+    <div class='item gallery-item'>
+    <div class="gallery-image-div">
+      <img ng-src='{{product.image}}' class='gallery-product-image' style="width:20%" >
+      <h3 class='gallery-product-title'></h3>
+         <h3 class='gallery-product-price'> {{product.title}} </h3>
+      <h3 class='gallery-product-price'> {{product.price}} $</h3>
+      <div    class="flag flag-rollback" ><label>{{product.offer}}%<br>Off</label></div>
+      <button class="btn btn-primary" style="margin-top: 4%;" ng-click="ym.addToCart(product);">Pay Now</button>
+      
+    </div>
+  </div>
+  </div>
 </div>
+</ion-gallery>
+</ion-content>
+</ion-nav-view>
+</ion-pane> 
+    
+ 

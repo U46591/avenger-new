@@ -21,21 +21,21 @@
        return staticMethods;
        
         (function initController() {
-          alert('login controller ----');
+         // alert('login controller ----');
         })();
             
         function Logout(){
-        	alert('logout ------');
+        //	alert('logout ------');
         };
         
         function Login() {
-        	alert('login ------');
+        //	alert('login ------');
         };
     
     }
     
     function PasswordValidate(){
-    	alert('password validate')
+    	//alert('password validate')
     }
 
 })();
