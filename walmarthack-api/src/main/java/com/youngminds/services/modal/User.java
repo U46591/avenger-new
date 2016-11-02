@@ -23,7 +23,7 @@ public class User implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 
-	@Column(name = "MOBILE_NO")
+	@Column(name = "MOBILE_NO",unique=true)
 	private Long mobileNo;
 
 	@Column(name = "NAME")
