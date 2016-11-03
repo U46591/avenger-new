@@ -2,46 +2,46 @@
 
 	{
 		"id": 1,
-		"title": "Ladies Fancy Watch",
-		"image": "http://ecx.images-amazon.com/images/I/71hKAPJZzUL._UL1500_.jpg",
+		"title": " Kids from Garanimals Girls' Short Sleeve Solid Bow Back Tee ",
+		"image": "https://i5.walmartimages.com/asr/82d5c665-a50a-44ca-893b-881b5809f9cc_1.17ce5b9b33498442b8dca3bd2d4e2afc.jpeg",
 		"price": 25,
-		"offer":10
+		"offer":4
 	},
 	{
 		"id": 2,
-		"title": "Ladies Salwar Suits",
-		"image": "http://static3.jassets.com/p/Ives-Red-Printed-Kurta-2856-1878572-1-pdp_slider_xs.jpg",
+		"title": "365 Kids from Garanimals Girls' Print Scooter",
+		"image": "https://i5.walmartimages.com/asr/d4123667-ea48-4d45-b041-0673aa658e17_1.0d914a008f47e88e2ad71b04c8258cf0.jpeg",
 		"price": 50,
-		"offer":11
+		"offer":1
 	},
 	
 	{
 		"id": 3,
-		"title": "Brown T Shirt",
-		"image": "http://static3.jassets.com/p/Next-Premium-Textured-Striped-T-Shirt-4062-3693272-1-pdp_slider_xs.jpg",
+		"title": "George Girls' Printed Bubble Peasant Top and Leggings Set",
+		"image": "https://i5.walmartimages.com/asr/887e6408-9963-4622-9446-f52e37cac510_1.d2c8d72287b1fabc0173e716359f4321.jpeg",
 		"price": 8,
 		"offer":12
 	},
 	{
 		"id": 4,
-		"title": "Pink Shoes",
-		"image": "https://images-na.ssl-images-amazon.com/images/I/81JEOfdzjKL._UY500_.jpg",
+		"title": "George Girls' Lace Sequin Chiffon Top and Leggings Set",
+		"image": "https://i5.walmartimages.com/asr/aa86c5ba-834e-4ad0-9200-49c42434c8d0_1.8cb7b16ec3f49d418f814ced66380ff2.jpeg",
 		"price": 10,
-		"offer":13
+		"offer":8
 	},
 	{
 		"id": 5,
-		"title": "Pink Shoes",
-		"image": "https://images-na.ssl-images-amazon.com/images/I/81JEOfdzjKL._UY500_.jpg",
+		"title": "Faded Glory Girls' Zip Front Hoodie Velour Track Suit",
+		"image": "https://i5.walmartimages.com/asr/300a3943-43ae-410d-bc12-1dbca6472972_1.041ebf207093ff122bfb27ec9b9bcac7.jpeg",
 		"price": 10,
-		"offer":13
+		"offer":3
 	},
 	{
 		"id": 6,
-		"title": "Pink Shoes",
-		"image": "https://images-na.ssl-images-amazon.com/images/I/81JEOfdzjKL._UY500_.jpg",
+		"title": "Healthtex Girls' Lace and Chiffon Top and Ankle Legging Set",
+		"image": "https://i5.walmartimages.com/asr/4ee00816-d071-4bf5-a9a4-54f71be42c1c_1.26558cad6085bf5f957213804719eec1.jpeg",
 		"price": 10,
-		"offer":13
+		"offer":2
 	}
 	
 ]}
