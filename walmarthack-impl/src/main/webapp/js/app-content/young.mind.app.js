@@ -43,11 +43,7 @@
     		controllerAs : 'ym'
 
     	})
-    	.when('/viewProducts', {
-    		templateUrl : 'productView.html',
-    		controller : 'productCntrl'
-
-    	})
+    	
         .otherwise({ redirectTo: '/' });
     }
 

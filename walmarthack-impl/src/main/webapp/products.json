@@ -28,6 +28,20 @@
 		"image": "https://images-na.ssl-images-amazon.com/images/I/81JEOfdzjKL._UY500_.jpg",
 		"price": 10,
 		"offer":13
+	},
+	{
+		"id": 5,
+		"title": "Pink Shoes",
+		"image": "https://images-na.ssl-images-amazon.com/images/I/81JEOfdzjKL._UY500_.jpg",
+		"price": 10,
+		"offer":13
+	},
+	{
+		"id": 6,
+		"title": "Pink Shoes",
+		"image": "https://images-na.ssl-images-amazon.com/images/I/81JEOfdzjKL._UY500_.jpg",
+		"price": 10,
+		"offer":13
 	}
 	
 ]}

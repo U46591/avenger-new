@@ -17,6 +17,7 @@
 
 
 <ion-gallery products="ym.products">
+
 <div class='ion-gallery-content'>
   <div class='card gallery-card' ng-repeat='product in ym.products track by $index'>
     <div class='item gallery-item'>
@@ -26,7 +27,8 @@
          <h3 class='gallery-product-price'> {{product.title}} </h3>
       <h3 class='gallery-product-price'> {{product.price}} $</h3>
       <div    class="flag flag-rollback" ><label>{{product.offer}}%<br>Off</label></div>
-      <button class="btn btn-primary" style="margin-top: 4%;" ng-click="ym.addToCart(product);">Shop Now</button>
+      <button class="btn btn-primary" style="margin-top: 4%;" ng-click="ym.addToCart(product);">Buy Now</button>
+    
     </div>
   </div>
   </div>
@@ -38,29 +40,7 @@
 
 
 
-<style>
 
-
-
-.flag-rollback {
-    background: #db1313;
-}
-.flag {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    float: left;
-    clear: both;
-    height: 16px;
-    padding: 0 10px;
-    margin-bottom: 4px;
-    border-radius: 0 50px 50px 0;
-    background: #db1313;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 16px;
-}
-</style>
 
 
 

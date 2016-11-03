@@ -9,10 +9,11 @@
         .controller('WalletController', WalletController)
         .directive('passwordValidate',PasswordValidate);
 
-    WalletController.$inject = ['$location'];
-    function WalletController($location) {
+    WalletController.$inject = ['$location','UserService'];
+    function WalletController($location,UserService) {
        var ym=this;
        ym.login=Login;
+       ym.wallets=UserService.GETWALLET();
         (function initController() {
           
         })();

@@ -1,8 +1,8 @@
-<ion-content>
+
 <div
 	class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
 	<div class="tabs">
-		<a class="tab-item" href="#/viewProducts"> <i class="icon ion-bag"></i>
+		<a class="tab-item" href="#/successPage"> <i class="icon ion-bag"></i>
 			Products
 		</a> <a class="tab-item" href="#/viewCart"> <i
 			class="icon ion-ios-cart"></i> Cart
@@ -13,7 +13,7 @@
 	</div>
 
 </div>
-</ion-content>
+<form id="myForm">
 <ion-pane class="pane"> <ion-nav-view> <ion-content
 	class="scroll-content ionic-scroll  has-header"> <ion-gallery
 	products="ym.items">
@@ -38,9 +38,12 @@
 		</div>
 	</div>
 </div>
-
+ <label>Redeem My Offer:
+    <input type="checkbox" id="redeemCheck" ng-model="ym.checkRedeem">
+  </label>
 <button class="btn btn-primary"
-	style="margin-top: 3%; m; margin-left: 43%;"
-	ng-click="ym.addToCart(product);">Pay Now</button>
+	style="margin-top: 3%; m; margin-left: 45%;"
+	ng-click="ym.payCart();">Pay Now</button>
 </ion-gallery> </ion-content> </ion-nav-view> </ion-pane>
 
+</form>
