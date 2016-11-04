@@ -7,8 +7,8 @@
 	angular.module('youngMindApp').controller('LoginController',
 			LoginController).directive('passwordValidate', PasswordValidate);
 
-	LoginController.$inject = [ '$location','UserService'];
-	function LoginController($location,UserService) {
+	LoginController.$inject = [ '$location','UserService', 'AuthenticationService'];
+	function LoginController($location,UserService, AuthenticationService) {
 		var ym = this;
 		ym.user = {};
 		ym.login = Login;
