@@ -1,0 +1,18 @@
+.flag-rollback {
+    background: #db1313;
+}
+.flag {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    float: left;
+    clear: both;
+    height: 16px;
+    padding: 0 10px;
+    margin-bottom: 4px;
+    border-radius: 0 50px 50px 0;
+    background: #db1313;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+}
